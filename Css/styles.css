@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: BreakingBad; 
+  src: url(../fuente/BreakingBad.ttf); 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('../img/indie-games-3000-x-2000-wallpaper-hfzt4kn4xxcjfzo3.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+
+.fuentegrande {
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  font-weight: 900;
+  color: #00d4ff; 
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+  
+  /* Animación de desplazamiento lateral */
+  animation: deslizar 12s linear infinite;
+}
+
+@keyframes deslizar {
+  0% { transform: translateX(-25%); }
+  50% { transform: translateX(25%); }
+  100% { transform: translateX(-25%); }
+}
+
+.form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  width: 100%;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 32rem;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(10, 15, 25, 0.9); 
+  border-radius: 12px;
+  border: 2px solid #005f73; 
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+
+.form fieldset {
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+legend {
+  color: #00d4ff;
+  font-weight: bold;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-weight: 500;
+  color: #e0e0e0;
+  gap: 5px;
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+select, 
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a1a2e;
+  border: 1px solid #005f73;
+  color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+  box-sizing: border-box; 
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+
+input[type="submit"], 
+input[type="reset"] {
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #00d4ff;
+  color: #000;
+}
+
+input[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #00b3d6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
