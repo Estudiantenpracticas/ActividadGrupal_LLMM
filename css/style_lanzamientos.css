@@ -1,4 +1,3 @@
-
 :root {
     --azul-oscuro: #064789;
     --azul-medio: #427aa1;
@@ -70,13 +69,14 @@ header {
 }
 
 .menu-enlace:hover {
-    background-color: var(--azul-medio);
-    color: var(--blanco);
-    border-radius: 5px;
-    transform: translateY(-2px);
     border-bottom-color: var(--blanco);
+    transform: translateY(-2px);
 }
 
+/* Animación para el menú al hacer hover  */
+.menu-enlace {
+    transition: all 0.3s ease;
+}
 
 h1 {
     color: var(--azul-oscuro);
