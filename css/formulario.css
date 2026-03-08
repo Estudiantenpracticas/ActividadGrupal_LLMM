@@ -142,3 +142,14 @@ input[type="submit"]:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
 }
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
