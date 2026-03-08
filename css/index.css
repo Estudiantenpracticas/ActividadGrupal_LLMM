@@ -79,7 +79,7 @@ header{
 
 .hero{
     background:linear-gradient(rgba(6,71,137,0.8), rgba(6,71,137,0.8)),
-    url("../media/arcade.webp");
+    url("../imagenes/arcade.webp");
     background-size:cover;
     background-position:center;
     min-height:380px;
