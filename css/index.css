@@ -10,7 +10,7 @@
 }
 
 /* ========== RESET ========== */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,6 +46,7 @@ header{
     color:var(--blanco);
     text-decoration:none;
     font-size:1.8rem;
+    font-weight: normal;
     letter-spacing:1px;
 }
 
@@ -69,10 +70,9 @@ header{
     transition:all 0.3s ease;
 }
 
-.menu-enlace:hover{
-    background-color: var(--azul-medio);
-    border-radius: 5px;
-    transform:translateY(-2px);
+.menu-enlace:hover {
+    border-bottom-color: var(--blanco);
+    transform: translateY(-2px);
 }
 
 /* ========== HERO PRINCIPAL ========== */
@@ -225,6 +225,12 @@ footer{
 }
 
 /* ========== ANIMACIONES ========== */
+
+/* Animación para el menú al hacer hover  */
+.menu-enlace {
+    transition: all 0.3s ease;
+}
+
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }

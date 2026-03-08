@@ -16,6 +16,7 @@
     box-sizing: border-box;
 }
 
+/* ========== BODY ========== */
 body {
     background-color: var(--fondo-claro);
     font-family: 'Georgia', 'Times New Roman', serif;
@@ -361,14 +362,6 @@ footer {
 .menu-enlace {
     transition: all 0.3s ease;
 }
-
-.menu-enlace:hover {
-    background-color: var(--azul-medio);
-    color: var(--blanco);
-    border-radius: 5px;
-    transform: translateY(-2px);
-}
-
 
 /* Animación para imágenes dentro de cards */
 .noticia-imagen img {
