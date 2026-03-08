@@ -1,6 +1,6 @@
 /* ========== VARIABLES ========== */
 :root {
-    --azul-oscuro: #064789;
+    --azul-oscuro: #064789; /* Paleta de Colores Azul*/
     --azul-medio: #427aa1;
     --fondo-claro: #ebf2fa;
     --texto-oscuro: #023047;
@@ -11,17 +11,17 @@
 
 /* ========== RESET ========== */
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ========== BODY ========== */
 body{
-    background-color:var(--fondo-claro);
-    font-family:'Georgia','Times New Roman',serif;
-    line-height:1.7;
-    color:var(--texto-oscuro);
+    background-color: var(--fondo-claro);
+    font-family: 'Georgia','Times New Roman',serif;
+    line-height: 1.7;
+    color: var(--texto-oscuro);
 }
 
 /* ========== HEADER / NAV ========== */
