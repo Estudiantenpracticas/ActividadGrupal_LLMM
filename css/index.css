@@ -1,0 +1,177 @@
+/* ========== VARIABLES ========== */
+:root {
+    --azul-oscuro: #064789;
+    --azul-medio: #427aa1;
+    --fondo-claro: #ebf2fa;
+    --texto-oscuro: #023047;
+    --blanco: #ffffff;
+    --gris-suave: #f0f4f8;
+    --sombra: rgba(0,0,0,0.05);
+}
+
+/* ========== RESET ========== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ========== BODY ========== */
+body{
+    background-color:var(--fondo-claro);
+    font-family:'Georgia','Times New Roman',serif;
+    line-height:1.7;
+    color:var(--texto-oscuro);
+}
+
+/* ========== HEADER / NAV ========== */
+
+header{
+    background-color:var(--azul-oscuro);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-principal{
+    max-width:1300px;
+    margin:0 auto;
+    padding:1.2rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo a{
+    color:var(--blanco);
+    text-decoration:none;
+    font-size:1.8rem;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--fondo-claro);
+    font-style:italic;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:2.5rem;
+}
+
+.menu-enlace{
+    color:var(--blanco);
+    text-decoration:none;
+    padding:0.5rem 0;
+    font-size:1.1rem;
+    border-bottom:2px solid transparent;
+    transition:all 0.3s ease;
+}
+
+.menu-enlace:hover{
+    border-bottom-color:var(--blanco);
+    transform:translateY(-2px);
+}
+
+/* ========== HERO PRINCIPAL ========== */
+
+.hero{
+    background:linear-gradient(rgba(6,71,137,0.8), rgba(6,71,137,0.8)),
+    url("../media/arcade.webp");
+    background-size:cover;
+    background-position:center;
+    min-height:380px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+.hero-contenido{
+    color:var(--blanco);
+    max-width:800px;
+    padding:0 2rem;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:1rem;
+    font-weight:normal;
+}
+
+.hero p{
+    font-size:1.3rem;
+    font-style:italic;
+}
+
+/* ========== MAIN ========== */
+
+main{
+    max-width:1300px;
+    margin:auto;
+    padding:0 2rem 4rem;
+}
+
+/* ========== GRID PRINCIPAL ========== */
+
+.inicio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2.5rem;
+}
+
+/* ========== CARDS ========== */
+
+.inicio-card{
+    background:var(--blanco);
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 8px 20px var(--sombra);
+    transition:all 0.3s ease;
+}
+
+.inicio-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(6,71,137,0.15);
+}
+
+.inicio-card h2{
+    color:var(--azul-oscuro);
+    font-size:1.6rem;
+    margin-bottom:0.7rem;
+    font-weight:normal;
+}
+
+.inicio-card p{
+    margin-bottom:1.5rem;
+}
+
+/* ========== BOTONES ========== */
+
+.btn{
+    display:inline-block;
+    padding:0.6rem 1.3rem;
+    background:var(--azul-medio);
+    color:var(--blanco);
+    text-decoration:none;
+    border-radius:6px;
+    font-family:Arial, sans-serif;
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    background:var(--azul-oscuro);
+}
+
+/* ========== FOOTER ========== */
+
+footer{
+    background:var(--azul-oscuro);
+    color:var(--blanco);
+    text-align:center;
+    padding:2.5rem;
+    margin-top:3rem;
+}
