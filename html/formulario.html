@@ -5,46 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Formulario de contacto - ¡El juego ha finalizado!">
     <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="shortcut icon" href="img/c6a8a289-ee76-4cbc-9f6c-8c31f5eb210e.jpg" type="image/x-icon">
-    <title>¡Que comience el juego!</title>
+    <link rel="shortcut icon" href="../imagenes/c6a8a289-ee76-4cbc-9f6c-8c31f5eb210e.jpg" type="image/x-icon">
+    <title>¡El juego ha finalizado!</title>
 </head>
 <body>
-    <div class="form">
-        <h1 class="fuentegrande"> ¡El juego ha finalizado!</h1>
-        <form action="mailto:a@gmail.com" method="post" enctype="text/plain">
+
+    <header>
+        <div class="menu-principal">
+            <div class="logo">
+                <a href="../index.html">Game<span>News</span></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="menu-enlace" href="../index.html">Inicio</a></li>
+                    <li><a class="menu-enlace" href="../noticias.html">Noticias</a></li>
+                    <li><a class="menu-enlace" href="../lanzamientos.html">Próximos Juegos</a></li>
+                    <li><a class="menu-enlace" href="formulario.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form">
+        <h1 class="fuentegrande">¡El juego ha finalizado!</h1>
+        
+        <form action="mailto:angela@ejemplo.com" method="post" enctype="text/plain">
             <fieldset class="datosPersonales">
                 <legend>Datos personales</legend>
-                <label>Nombre: <input type="text" name="nombre" id="nombre" required></label>
-                <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required></label>
-                <label>Dirección: <input type="text" name="direccion" id="direccion"></label>
-                <label>Código postal: <input type="number" name="codigoPostal" id="codigoPostal"></label>
-                <label>Ciudad: <input type="text" name="ciudad" id="ciudad"></label>
-                <label>DNI: <input type="text" name="dni" id="dni"></label>
-                <label>Correo electrónico: <input type="email" name="correoElectronico" id="correoElectronico" required></label>
+                
+                <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" required></label>
+                <label for="apellidos">Apellidos: <input type="text" name="apellidos" id="apellidos" required></label>
+                <label for="correoElectronico">Email: <input type="email" name="correoElectronico" id="correoElectronico" required></label>
+                
                 <fieldset class="sexo">
                     <legend>Sexo</legend>
                     <label><input type="radio" name="genero" value="hombre"> Hombre</label>
                     <label><input type="radio" name="genero" value="mujer"> Mujer</label>
                 </fieldset>
-                <label>Fecha de nacimiento: <input type="date" name="fechaNacimiento" id="fechaNacimiento"></label>
-                <label>¿Cual ha sido tu juego favorito?:
+
+                <label for="personaje">Tu juego favorito:
                     <select name="personaje" id="personaje">
                         <option value="pokemon">Pokemon</option>
-                        <option value="grandtheftauto">Gran theft auto</option>
-                        <option value="world of warcraft">World of warcraft</option>
-                        <option value="residentevil">Resident Evil</option>
                         <option value="gta6">Gta 6</option>
-                        <option value="ninguno">Ninguno de los nombrados</option>
+                        <option value="ninguno">Ninguno</option>
                     </select>
                 </label>
-                <label>Deja un comentario:
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="4" placeholder="Escribe aquí..."></textarea>
+
+                <label for="comentarios">Comentario:
+                    <textarea name="comentarios" id="comentarios" rows="3" placeholder="Escribe aquí..."></textarea>
                 </label>
-                <label>Adjuntar archivo: <input type="file" name="archivo" id="archivo"></label>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
+                
+                <div class="botones-container">
+                    <input type="reset" value="Borrar" class="btn-borrar">
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </div>
             </fieldset>
         </form>
-    </div>
+    </main>
+
+    <footer>
+        <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
+    </footer>
+
 </body>
 </html>

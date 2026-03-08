@@ -1,144 +1,93 @@
-
-@font-face {
-  font-family: BreakingBad; 
-  src: url(../fuente/BreakingBad.ttf); 
+:root {
+    --azul-oscuro: #0a0f19;
+    --celeste-gamer: #00d4ff;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
-  margin: 0;
-  min-height: 100vh;
-  background-image: url('../img/indie-games-3000-x-2000-wallpaper-hfzt4kn4xxcjfzo3.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url('../imagenes/indie-games-3000-x-2000-wallpaper-hfzt4kn4xxcjfzo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
+/* HEADER */
+header {
+    background-color: var(--azul-oscuro);
+    border-bottom: 2px solid var(--celeste-gamer);
+    padding: 10px 0;
+}
+
+.menu-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
+.logo span { color: var(--celeste-gamer); }
+.menu { display: flex; list-style: none; gap: 20px; }
+.menu-enlace { color: white; text-decoration: none; font-weight: bold; }
+.menu-enlace:hover { color: var(--celeste-gamer); transition: 0.3s; }
+
+/* CONTENEDOR Y FORMULARIO (Centrado perfecto) */
+.form {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
 
 .fuentegrande {
-  font-family: 'Orbitron', 'Arial Black', sans-serif;
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 45px;
-  font-weight: 900;
-  color: #00d4ff; 
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  white-space: nowrap;
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
-  
-  /* Animación de desplazamiento lateral */
-  animation: deslizar 12s linear infinite;
+    color: var(--celeste-gamer);
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 15px;
 }
 
-@keyframes deslizar {
-  0% { transform: translateX(-25%); }
-  50% { transform: translateX(25%); }
-  100% { transform: translateX(-25%); }
+form {
+    background-color: rgba(10, 15, 25, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--celeste-gamer);
+    width: 100%;
+    max-width: 480px;
 }
 
-.form {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  width: 100%;
+fieldset { border: 1px solid #444; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+legend { color: var(--celeste-gamer); font-weight: bold; padding: 0 10px; }
+
+label { display: block; margin-top: 10px; }
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    background: #1a2233;
+    color: white;
+    border: 1px solid #333;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
 }
 
-.form form {
-  display: flex;
-  flex-direction: column;
-  max-width: 32rem;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: rgba(10, 15, 25, 0.9); 
-  border-radius: 12px;
-  border: 2px solid #005f73; 
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-}
+/* BOTONES */
+.botones-container { display: flex; gap: 10px; margin-top: 20px; }
+.btn-enviar { background: var(--celeste-gamer); color: black; font-weight: bold; border: none; padding: 10px; cursor: pointer; flex: 2; border-radius: 5px; }
+.btn-borrar { background: transparent; color: white; border: 1px solid #ff4b2b; padding: 10px; cursor: pointer; flex: 1; border-radius: 5px; }
+.btn-enviar:hover { background: white; transition: 0.3s; }
 
-
-.form fieldset {
-  border: 1px solid rgba(0, 212, 255, 0.2);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px; 
-}
-
-legend {
-  color: #00d4ff;
-  font-weight: bold;
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.form label {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  font-weight: 500;
-  color: #e0e0e0;
-  gap: 5px;
-}
-
-
-input[type="text"], 
-input[type="email"], 
-input[type="number"], 
-input[type="date"], 
-select, 
-textarea {
-  width: 100%;
-  padding: 10px;
-  background-color: #1a1a2e;
-  border: 1px solid #005f73;
-  color: #fff;
-  border-radius: 5px;
-  font-family: inherit;
-  box-sizing: border-box; 
-}
-
-input:focus, textarea:focus {
-  outline: none;
-  border-color: #00d4ff;
-  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
-}
-
-
-input[type="submit"], 
-input[type="reset"] {
-  padding: 12px;
-  margin-top: 10px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-input[type="submit"] {
-  background-color: #00d4ff;
-  color: #000;
-}
-
-input[type="reset"] {
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-input[type="submit"]:hover {
-  background-color: #00b3d6;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+/* FOOTER */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--celeste-gamer);
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--celeste-gamer);
 }
