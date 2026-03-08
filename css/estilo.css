@@ -1,0 +1,456 @@
+/* ========== VARIABLES========== */
+:root {
+    --azul-oscuro: #064789;
+    --azul-medio: #427aa1;
+    --fondo-claro: #ebf2fa;
+    --texto-oscuro: #023047;
+    --blanco: #ffffff;
+    --gris-suave: #f0f4f8;
+    --sombra: rgba(0, 0, 0, 0.05);
+}
+
+/* ========== RESET Y TIPOGRAFÍA ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo-claro);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: var(--texto-oscuro);
+}
+
+/* ========== HEADER Y NAVBAR ========== */
+header {
+    background-color: var(--azul-oscuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-principal {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--fondo-claro);
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu-enlace {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.menu-enlace:hover {
+    border-bottom-color: var(--blanco);
+    transform: translateY(-2px);
+}
+
+/* ========== PARALLAX ========== */
+.parallax {
+    background-image: linear-gradient(rgba(6, 71, 137, 0.6), rgba(6, 71, 137, 0.6)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1400');
+    min-height: 380px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.parallax-contenido {
+    color: var(--blanco);
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.parallax-contenido h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.parallax-contenido p {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* ========== MAIN ========== */
+main {
+    max-width: 1300px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+}
+
+h1 {
+    color: var(--azul-oscuro);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 2px solid var(--azul-medio);
+    padding-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+}
+
+/* ========== GRID DE NOTICIAS ========== */
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin: 2rem 0;
+}
+
+/* ========== CARDS DE NOTICIAS ========== */
+.noticia-card {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px var(--sombra);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(6, 71, 137, 0.15);
+}
+
+/* ========== IMÁGENES ESPECÍFICAS POR NOTICIA ========== */
+/* GTA VI */
+.noticia-card:nth-child(1) .noticia-imagen img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* WoW Midnight */
+.noticia-card:nth-child(2) .noticia-imagen img {
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Pokémon Pokopia */
+.noticia-card:nth-child(3) .noticia-imagen img {
+    object-fit: cover;
+    object-position: 30% 50%;
+}
+
+/* League of Legends */
+.noticia-card:nth-child(4) .noticia-imagen img {
+    object-fit: cover;
+    object-position: 20% 50%;
+}
+
+.noticia-imagen {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+}
+
+.noticia-imagen img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+}
+
+.noticia-card:hover .noticia-imagen img {
+    transform: scale(1.05);
+}
+
+.noticia-fecha {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.noticia-contenido {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.noticia-contenido h2 {
+    color: var(--azul-oscuro);
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.noticia-contenido h3 {
+    color: var(--azul-medio);
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.noticia-contenido p {
+    color: #2c3e50;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+/* ========== LISTAS ========== */
+.lista-caracteristicas {
+    list-style: none;
+    margin: 1rem 0;
+    padding-left: 0;
+}
+
+.lista-caracteristicas li {
+    margin-bottom: 0.7rem;
+    padding-left: 1.8rem;
+    position: relative;
+    color: #1e3a5f;
+}
+
+.lista-caracteristicas li::before {
+    content: "✓";
+    color: var(--azul-medio);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ========== TABLAS ========== */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: var(--blanco);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px var(--sombra);
+    font-family: 'Arial', sans-serif;
+}
+
+.tabla-horarios th {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.tabla-horarios td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e0e7ef;
+    color: #1e3a5f;
+}
+
+.tabla-horarios tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-horarios tr:hover {
+    background-color: var(--gris-suave);
+}
+
+/* ========== CONTENEDORES DE IMÁGENES PEQUEÑAS ========== */
+.trofeo-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0.5rem;
+    padding: 1.2rem;
+    background-color: var(--gris-suave);
+    border-radius: 12px;
+    border-left: 4px solid var(--azul-medio);
+}
+
+.trofeo-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px var(--sombra);
+}
+
+.trofeo-container p {
+    margin: 0;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.trofeo-container small {
+    color: #5f6b7a;
+    font-size: 0.9rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}/* ========== ANIMACIONES========== */
+
+/* Animación para que las cards aparezcan suavemente */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.noticia-card {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Retraso escalonado para cada card */
+.noticia-card:nth-child(1) { animation-delay: 0.1s; }
+.noticia-card:nth-child(2) { animation-delay: 0.3s; }
+.noticia-card:nth-child(3) { animation-delay: 0.5s; }
+.noticia-card:nth-child(4) { animation-delay: 0.7s; }
+
+/* Animación para el menú al hacer hover  */
+.menu-enlace {
+    transition: all 0.3s ease;
+}
+
+.menu-enlace:hover {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+
+/* Animación para imágenes dentro de cards */
+.noticia-imagen img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.noticia-card:hover .noticia-imagen img {
+    transform: scale(1.08);
+}
+
+/* Animación para la tabla */
+.tabla-horarios tr {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tabla-horarios tr:hover {
+    background-color: #d4e3fd;
+    transform: scale(1.01);
+}
+
+/* Animación para los elementos de lista */
+.lista-caracteristicas li {
+    transform: translateX(0);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.lista-caracteristicas li:hover {
+    transform: translateX(5px);
+    color: var(--azul-oscuro);
+    font-weight: 500;
+}
+
+/* Animación para el contenedor de trofeo */
+.trofeo-container {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.trofeo-container:hover {
+    box-shadow: 0 8px 20px rgba(6, 71, 137, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Animación para el footer */
+footer {
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #053b6e;
+}
+
+/* Animación para el título principal */
+h1 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--azul-medio);
+    animation: expandWidth 1.5s ease infinite alternate;
+}
+
+@keyframes expandWidth {
+    from { width: 100px; opacity: 0.5; }
+    to { width: 200px; opacity: 1; }
+}
+
+/* Animación para el parallax  */
+.parallax-contenido h2 {
+    animation: subtleFloat 4s ease-in-out infinite;
+}
+
+@keyframes subtleFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
