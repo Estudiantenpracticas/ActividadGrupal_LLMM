@@ -1,9 +1,5 @@
-  GNU nano 8.3                       README.md                        Modified
-##  M-% Integrantes del grupo
-
-| [<img src="https://github.com/menahack10.png" width="100px;"/><br /><sub><b>F>
-| :---: | :---: | :---: | :---: |# ActividadGrupal_LLMM
-
-
-
-
+## 👥 Integrantes del grupo
+* **Fernando Mena Sanabria** - [@menahack10](https://github.com/menahack10)
+* **Angela Carballo Santamaria** - [@Estudiantenpracticas](https://github.com/Estudiantenpracticas)
+* **Rubén Darío Bermúdez Camargo** - [@rubenx1303](https://github.com/rubenx1303)
+* **David Gutiérrez Jacob** - [@DavidiGuti](https://github.com/DavidiGuti)
