@@ -16,6 +16,7 @@
     box-sizing: border-box;
 }
 
+/* ========== BODY ========== */
 body {
     background-color: var(--fondo-claro);
     font-family: 'Georgia', 'Times New Roman', serif;
@@ -121,7 +122,7 @@ h1 {
     margin-bottom: 3rem;
     text-align: center;
     font-weight: normal;
-    border-bottom: 2px solid var(--azul-medio);
+    /*border-bottom: 2px solid var(--azul-medio);*/
     padding-bottom: 1rem;
     display: inline-block;
     width: 100%;
@@ -333,7 +334,9 @@ footer {
     margin-top: 3rem;
     font-size: 1rem;
     letter-spacing: 0.5px;
-}/* ========== ANIMACIONES========== */
+}
+
+/* ========== ANIMACIONES========== */
 
 /* Animación para que las cards aparezcan suavemente */
 @keyframes fadeInUp {
@@ -361,14 +364,6 @@ footer {
 .menu-enlace {
     transition: all 0.3s ease;
 }
-
-.menu-enlace:hover {
-    background-color: var(--azul-medio);
-    color: var(--blanco);
-    border-radius: 5px;
-    transform: translateY(-2px);
-}
-
 
 /* Animación para imágenes dentro de cards */
 .noticia-imagen img {

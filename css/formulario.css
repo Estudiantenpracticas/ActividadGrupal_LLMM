@@ -16,6 +16,7 @@ body {
     color: white;
 }
 
+<<<<<<< HEAD
 /* HEADER */
 header {
     background-color: var(--azul-oscuro);
@@ -46,6 +47,57 @@ header {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
+=======
+/* ========== HEADER / NAV ========== */
+header{
+    background-color:var(--azul-oscuro);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-principal{
+    max-width:1300px;
+    margin:0 auto;
+    padding:1.2rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo a{
+    color:var(--blanco);
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight: normal;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--fondo-claro);
+    font-style:italic;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:2.5rem;
+}
+
+.menu-enlace{
+    color:var(--blanco);
+    text-decoration:none;
+    padding:0.5rem 0;
+    font-size:1.1rem;
+    border-bottom:2px solid transparent;
+    transition:all 0.3s ease;
+}
+
+.menu-enlace:hover {
+    border-bottom-color: var(--blanco);
+    transform: translateY(-2px);
+>>>>>>> 342f6a93e6d8f01669ad469073ff6c286fb411aa
 }
 
 .fuentegrande {
@@ -83,6 +135,7 @@ input[type="text"], input[type="email"], select, textarea {
 .btn-borrar { background: transparent; color: white; border: 1px solid #ff4b2b; padding: 10px; cursor: pointer; flex: 1; border-radius: 5px; }
 .btn-enviar:hover { background: white; transition: 0.3s; }
 
+<<<<<<< HEAD
 /* FOOTER */
 footer {
     background-color: var(--azul-oscuro);
@@ -90,4 +143,97 @@ footer {
     text-align: center;
     padding: 15px;
     border-top: 1px solid var(--celeste-gamer);
+=======
+
+.form fieldset {
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+legend {
+  color: #00d4ff;
+  font-weight: bold;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-weight: 500;
+  color: #e0e0e0;
+  gap: 5px;
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+select, 
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a1a2e;
+  border: 1px solid #005f73;
+  color: #fff;
+  border-radius: 5px;
+  font-family: inherit;
+  box-sizing: border-box; 
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
+}
+
+
+input[type="submit"], 
+input[type="reset"] {
+  padding: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #00d4ff;
+  color: #000;
+}
+
+input[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #00b3d6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+>>>>>>> 342f6a93e6d8f01669ad469073ff6c286fb411aa
 }
