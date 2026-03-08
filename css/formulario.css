@@ -19,6 +19,56 @@ body {
   background-attachment: fixed; 
 }
 
+/* ========== HEADER / NAV ========== */
+header{
+    background-color:var(--azul-oscuro);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-principal{
+    max-width:1300px;
+    margin:0 auto;
+    padding:1.2rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo a{
+    color:var(--blanco);
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight: normal;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--fondo-claro);
+    font-style:italic;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:2.5rem;
+}
+
+.menu-enlace{
+    color:var(--blanco);
+    text-decoration:none;
+    padding:0.5rem 0;
+    font-size:1.1rem;
+    border-bottom:2px solid transparent;
+    transition:all 0.3s ease;
+}
+
+.menu-enlace:hover {
+    border-bottom-color: var(--blanco);
+    transform: translateY(-2px);
+}
 
 .fuentegrande {
   font-family: 'Orbitron', 'Arial Black', sans-serif;
