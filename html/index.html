@@ -3,139 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal de Videojuegos</title>
-  <link rel="stylesheet" href="../css/index.css">
+  <title>Inicio - GameNews</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <!-- Precarga imagen de portada para evitar parpadeos -->
+  <link rel="preload" as="image" href="../imagenes/arcade.webp"> 
 </head>
 <body>
 
-  <!-- HEADER CON MENÚ -->
-    <header>
-        <nav class="menu-principal">
+  <!-- ========== HEADER / NAV ========== -->
+  <header>
+      <nav class="menu-principal">
 
-            <div class="logo">
-                <a href="index.html">Game<span>News</span></a>
-            </div>
+          <div class="logo">
+              <a href="index.html">Game<span>News</span></a>
+          </div>
 
-            <ul class="menu">
-                <li><a href="index.html" class="menu-enlace">Inicio</a></li>
-                <li><a href="noticias.html" class="menu-enlace">Noticias</a></li>
-                <li><a href="lanzamientos.html" class="menu-enlace">Próximos Lanzamientos</a></li>
-                <li><a href="formulario.html" class="menu-enlace">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+          <ul class="menu">
+              <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+              <li><a href="noticias.html" class="menu-enlace">Noticias</a></li>
+              <li><a href="lanzamientos.html" class="menu-enlace">Próximos Lanzamientos</a></li>
+              <li><a href="formulario.html" class="menu-enlace">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
 
-<!-- HERO PRINCIPAL -->
-
-<section class="hero">
-  <div class="hero-contenido">
-    <h1>Bienvenido a GameNews</h1>
-    <p>
-      Descubre las últimas noticias del mundo gaming, los lanzamientos más esperados
-      y toda la información sobre tus videojuegos favoritos.
-    </p>
-  </div>
-</section>
-
-<main>
-
-<!-- INTRODUCCIÓN -->
-  <h2>¿Qué es GameNews?</h2>
-
-  <section class="introduccion">
-
-    <p>
-      <strong>GameNews</strong> es una página web creada por un grupo de estudiantes 
-      apasionados por los videojuegos con el objetivo de compartir información 
-      sobre la actualidad del sector gaming.
-    </p>
-
-    <p>
-      En nuestra web podrás encontrar noticias recientes sobre los videojuegos más 
-      populares, anuncios importantes de las compañías, eventos de la industria y 
-      detalles sobre los títulos más esperados que están por llegar.
-    </p>
-
-    <p>
-      Nuestro objetivo es ofrecer un espacio donde cualquier jugador pueda 
-      informarse fácilmente sobre lo que ocurre en el mundo de los videojuegos, 
-      independientemente de si juega en PC, PlayStation, Xbox o Nintendo.
-    </p>
-
+<!-- ========== HERO PRINCIPAL ========== -->
+  <section class="hero">
+    <div class="hero-contenido">
+      <h1>Bienvenido a GameNews</h1>
+      <p>
+        Descubre las últimas noticias del mundo gaming, los lanzamientos más esperados
+        y toda la información sobre tus videojuegos favoritos.
+      </p>
+    </div>
   </section>
 
-<!-- PAGINAS PRINCIPALES -->
+  <!-- ========== INTRODUCCIÓN ========== -->
+  <main>
+    <h2>¿Qué es GameNews?</h2>
 
-  <section class="inicio-grid">
+    <section class="introduccion">
 
-    <!-- NOTICIAS -->
-    <a href="noticias.html" class="card-link">
-      <article class="inicio-card">
+      <p>
+        <strong>GameNews</strong> es una página web creada por un grupo de estudiantes 
+        apasionados por los videojuegos con el objetivo de compartir información 
+        sobre la actualidad del sector gaming.
+      </p>
 
-        <div class="card-img">
-          <img src="../imagenes/gta6.jpg" alt=Noticias gaming">
-        </div>
+      <p>
+        En nuestra web podrás encontrar noticias recientes sobre los videojuegos más 
+        populares, anuncios importantes de las compañías, eventos de la industria y 
+        detalles sobre los títulos más esperados que están por llegar.
+      </p>
 
-        <h3>Noticias de Videojuegos</h3>
+      <p>
+        Nuestro objetivo es ofrecer un espacio donde cualquier jugador pueda 
+        informarse fácilmente sobre lo que ocurre en el mundo de los videojuegos, 
+        independientemente de si juega en PC, PlayStation, Xbox o Nintendo.
+      </p>
 
-        <p>
-          Mantente al día con las últimas novedades, anuncios de nuevos juegos,
-          actualizaciones importantes y eventos del mundo gaming.
-        </p>
+    </section>
 
-        <div class="btn">Ver noticias</div>
+  <!-- ========== PAGINAS PRINCIPALES ========== -->
+    <section class="inicio-grid">
 
-      </article>
-    </a>
+      <!-- --------- Noticias --------- -->
+      <a href="noticias.html" class="card-link">
+        <article class="inicio-card">
 
-    <!-- LANZAMIENTOS -->
+          <div class="card-img">
+            <img src="../imagenes/gta6.jpg" alt="Noticias gaming">
+          </div>
 
-    <a href="lanzamientos.html" class="card-link">
-      <article class="inicio-card">
+          <h3>Noticias de Videojuegos</h3>
 
-        <div class="card-img">
-          <img src="../imagenes/resident-evil.jpg" alt="Próximos lanzamientos">
-        </div>
+          <p>
+            Mantente al día con las últimas novedades, anuncios de nuevos juegos,
+            actualizaciones importantes y eventos del mundo gaming.
+          </p>
 
-        <h3>Próximos Lanzamientos</h3>
+          <div class="btn">Ver noticias</div>
 
-        <p>
-          Descubre qué videojuegos están a punto de salir al mercado y
-          prepárate para los títulos más esperados de los próximos meses.
-        </p>
+        </article>
+      </a>
 
-        <div class="btn" >Ver próximos juegos</div>
+      <!-- --------- Lanzamientos --------- -->
+      <a href="lanzamientos.html" class="card-link">
+        <article class="inicio-card">
 
-      </article>
-    </a>
+          <div class="card-img">
+            <img src="../imagenes/resident-evil.jpg" alt="Próximos lanzamientos">
+          </div>
+
+          <h3>Próximos Lanzamientos</h3>
+
+          <p>
+            Descubre qué videojuegos están a punto de salir al mercado y
+            prepárate para los títulos más esperados de los próximos meses.
+          </p>
+
+          <div class="btn" >Ver próximos juegos</div>
+
+        </article>
+      </a>
 
 
-    <!-- CONTACTO -->
-    <a href="formulario.html" class="card-link">
-      <article class="inicio-card">
+      <!-- --------- Contacto --------- -->
+      <a href="formulario.html" class="card-link">
+        <article class="inicio-card">
 
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="Contacto gaming">
-        </div>
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="Contacto gaming">
+          </div>
 
-        <h3>Contacto</h3>
+          <h3>Contacto</h3>
 
-        <p>
-          ¿Tienes alguna sugerencia, quieres colaborar o enviarnos alguna noticia?
-          Ponte en contacto con nosotros.
-        </p>
+          <p>
+            ¿Tienes alguna sugerencia, quieres colaborar o enviarnos alguna noticia?
+            Ponte en contacto con nosotros.
+          </p>
 
-        <div class="btn">Ir a contacto</div>
+          <div class="btn">Ir a contacto</div>
 
-      </article>
-    </a>
-  </section>
+        </article>
+      </a>
+    </section>
 
-</main>
+  </main>
 
-<footer>
-  <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
-</footer>
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
+  </footer>
 
 </body>
 </html>

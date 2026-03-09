@@ -5,7 +5,6 @@
     --fondo-claro: #ebf2fa;
     --texto-oscuro: #023047;
     --blanco: #ffffff;
-    --gris-suave: #f0f4f8;
     --sombra: rgba(0,0,0,0.05);
 }
 
@@ -26,48 +25,50 @@ body{
 
 /* ========== HEADER / NAV ========== */
 header{
-    background-color:var(--azul-oscuro);
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    background-color: var(--azul-oscuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .menu-principal{
-    max-width:1300px;
-    margin:0 auto;
-    padding:1.2rem 2rem;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* --------- Logo --------- */ 
 .logo a{
-    color:var(--blanco);
-    text-decoration:none;
-    font-size:1.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
     font-weight: normal;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
 .logo span{
-    color:var(--fondo-claro);
-    font-style:italic;
+    color: var(--fondo-claro);
+    font-style: italic;
 }
 
+/* --------- Menu --------- */ 
 .menu{
-    display:flex;
-    list-style:none;
-    gap:2.5rem;
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
 }
 
 .menu-enlace{
-    color:var(--blanco);
-    text-decoration:none;
-    padding:0.5rem 0;
-    font-size:1.1rem;
-    border-bottom:2px solid transparent;
-    transition:all 0.3s ease;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .menu-enlace:hover {
@@ -78,7 +79,7 @@ header{
 /* ========== HERO PRINCIPAL ========== */
 .hero{
     background: linear-gradient(rgba(6, 71, 137, 0.6), rgba(6, 71, 137, 0.6)),
-    url("../imagenes/arcade.webp");
+     url("../imagenes/arcade.webp"); /* Imagen .webp para ocupar menos espacio y mejorar el rendimiento  */
     background-size: cover;
     background-position:center;
     min-height:380px;
@@ -106,8 +107,14 @@ header{
     font-style:italic;
 }
 
-/* ========== INTRODUCCIÓN ========== */
+/* ========== MAIN ========== */
+main{
+    max-width:1300px;
+    margin:auto;
+    padding:0 2rem 4rem;
+}
 
+/* ========== INTRODUCCIÓN ========== */
 h2 {
     color: var(--azul-oscuro);
     font-size: 2.5rem;
@@ -120,7 +127,7 @@ h2 {
 }
 
 .introduccion{
-    background-color: var(--gris-suave);
+    background-color: var(--blanco);
     padding: 3rem 4rem;
     border-radius: 12px;
     margin-bottom: 4rem;
@@ -135,22 +142,16 @@ h2 {
     text-align: justify;
 }
 
-/* ========== MAIN ========== */
-main{
-    max-width:1300px;
-    margin:auto;
-    padding:0 2rem 4rem;
-}
 
-/* ========== GRID PRINCIPAL ========== */
+
+/* ========== GRID PAGINAS PRINCIPALES ========== */
 .inicio-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:2.5rem;
 }
 
-/* ========== CARDS ========== */
-
+/* --------- CARDS --------- */
 .card-link{
     text-decoration:none;
     color:inherit;
@@ -169,7 +170,7 @@ main{
     cursor:pointer;
 }
 
-/* Imagen de la tarjeta */
+/* --------- Imagen Card --------- */
 .inicio-card .card-img img {
     width: 100%;
     height: 180px;
@@ -189,6 +190,7 @@ main{
     box-shadow:0 12px 25px rgba(6,71,137,0.15);
 }
 
+/* --------- Texto Card --------- */
 .inicio-card h3{
     color:var(--azul-oscuro);
     font-size:1.6rem;
@@ -200,11 +202,10 @@ main{
     margin-bottom:1.5rem;
 }
 
-/* ========== BOTONES ========== */
+/* --------- Botones Card --------- */
 .btn{
-    display:inline-block;
     padding:0.6rem 1.3rem;
-    background:var(--azul-medio);
+    background:var(--azul-oscuro);
     color:var(--blanco);
     text-decoration:none;
     border-radius:6px;
@@ -213,7 +214,7 @@ main{
 }
 
 .btn:hover{
-    background:var(--azul-oscuro);
+    background:var(--azul-medio);
 }
 
 /* ========== FOOTER ========== */
@@ -227,9 +228,9 @@ footer{
 
 /* ========== ANIMACIONES ========== */
 
-/* Animación para el menú al hacer hover  */
-.menu-enlace {
-    transition: all 0.3s ease;
+/* --- Animación para la introduccion principal --- */
+.introduccion {
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 @keyframes fadeInUp {
@@ -237,14 +238,7 @@ footer{
     to { opacity: 1; transform: translateY(0); }
 }
 
-.inicio-card {
-    animation: fadeInUp 0.8s ease forwards;
-}
-.inicio-card:nth-child(1){animation-delay:0.2s;}
-.inicio-card:nth-child(2){animation-delay:0.4s;}
-.inicio-card:nth-child(3){animation-delay:0.6s;}
-
-/* Animación para el título principal */
+/* --- Animación para el título principal --- */
 h2 {
     position: relative;
     display: inline-block;
