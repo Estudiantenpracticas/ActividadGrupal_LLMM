@@ -1,7 +1,11 @@
 :root {
-    --azul-oscuro: #0a0f19;
-    --celeste-gamer: #00d4ff;
+    --azul-oscuro: #064789;
+    --azul-medio: #427aa1;
+    --fondo-claro: #ebf2fa;
+    --texto-oscuro: #023047;
     --blanco: #ffffff;
+    --celeste-gamer: #3a9bdc;
+    --gris-oscuro: #0a0f19;
 }
 
 /* HEADER Y NAVEGACIÓN */
@@ -48,7 +52,7 @@ header{
 }
 
 .logo span {
-    color: var(--celeste-gamer);
+    color: var(--azul-medio);
     font-style:italic;
 }
 
@@ -68,8 +72,8 @@ header{
 }
 
 .menu-enlace:hover {
-    border-bottom-color: var(--celeste-gamer);
-    color: var(--celeste-gamer);
+    border-bottom-color: var(--azul-medio);
+    color: var(--azul-medio);
     transform: translateY(-2px);
 }
 
@@ -93,7 +97,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* baja el formulario */
+    justify-content: flex-start;
     width: 100%;
     padding-top: 120px;
 }
@@ -107,11 +111,11 @@ h1 {
     margin-bottom: 25px;
 }
 
-/* CONTENEDOR DEL FORMULARIO */
+/* FORMULARIO */
 
 .form-container {
     width: 100%;
-    max-width: 350px; /* formulario más estrecho */
+    max-width: 350px;
     display: flex;
     justify-content: center;
 }
@@ -122,10 +126,8 @@ form {
     border-radius: 15px;
     border: 2px solid var(--celeste-gamer);
     width: 100%;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    box-shadow: 0 0 20px rgba(58, 155, 220, 0.2);
 }
-
-/* FIELDSET */
 
 fieldset {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -138,8 +140,6 @@ legend {
     font-weight: bold;
     padding: 0 10px;
 }
-
-/* INPUTS */
 
 label {
     display: flex;
@@ -160,8 +160,6 @@ textarea {
     border-radius: 5px;
 }
 
-/* RADIO BUTTONS */
-
 .radio-group {
     display: flex;
     gap: 20px;
@@ -173,8 +171,6 @@ textarea {
     align-items: center;
     gap: 5px;
 }
-
-/* BOTONES */
 
 .botones-container {
     display: flex;
@@ -213,8 +209,8 @@ textarea {
 
 footer {
     background: var(--azul-oscuro);
-    color: var(--celeste-gamer);
+    color: var(--blanco);
     text-align: center;
     padding: 20px;
-    border-top: 1px solid var(--celeste-gamer);
+    border-top: 1px solid var(--azul-medio);
 }
