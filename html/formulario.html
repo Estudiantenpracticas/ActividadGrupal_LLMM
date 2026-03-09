@@ -9,7 +9,6 @@
     <title>¡El juego ha finalizado!</title>
 </head>
 <body>
-<<<<<<< HEAD
 
     <header>
         <div class="menu-principal">
@@ -27,71 +26,14 @@
         </div>
     </header>
 
-    <main class="form">
+    <main class="form-container">
         <h1 class="fuentegrande">¡El juego ha finalizado!</h1>
         
-        <form action="mailto:angela@ejemplo.com" method="post" enctype="text/plain">
-            <fieldset class="datosPersonales">
-                <legend>Datos personales</legend>
-                
-                <label for="nombre">Nombre: <input type="text" name="nombre" id="nombre" required></label>
-                <label for="apellidos">Apellidos: <input type="text" name="apellidos" id="apellidos" required></label>
-                <label for="correoElectronico">Email: <input type="email" name="correoElectronico" id="correoElectronico" required></label>
-                
-                <fieldset class="sexo">
-                    <legend>Sexo</legend>
-                    <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-                    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
-                </fieldset>
-
-                <label for="personaje">Tu juego favorito:
-                    <select name="personaje" id="personaje">
-                        <option value="pokemon">Pokemon</option>
-                        <option value="gta6">Gta 6</option>
-                        <option value="ninguno">Ninguno</option>
-                    </select>
-                </label>
-
-                <label for="comentarios">Comentario:
-                    <textarea name="comentarios" id="comentarios" rows="3" placeholder="Escribe aquí..."></textarea>
-                </label>
-                
-                <div class="botones-container">
-                    <input type="reset" value="Borrar" class="btn-borrar">
-                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-                </div>
-            </fieldset>
-        </form>
-    </main>
-
-    <footer>
-        <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
-    </footer>
-
-=======
-    <!-- HEADER CON MENÚ -->
-    <header>
-        <nav class="menu-principal">
-
-            <div class="logo">
-                <a href="index.html">Game<span>News</span></a>
-            </div>
-
-            <ul class="menu">
-                <li><a href="index.html" class="menu-enlace">Inicio</a></li>
-                <li><a href="noticias.html" class="menu-enlace">Noticias</a></li>
-                <li><a href="lanzamientos.html" class="menu-enlace">Próximos Lanzamientos</a></li>
-                <li><a href="formulario.html" class="menu-enlace">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
         <div class="form">
-            <h1> ¡El juego ha finalizado!</h1>
-            <form action="mailto:a@gmail.com" method="post" enctype="text/plain">
+            <form action="mailto:angela@ejemplo.com" method="post" enctype="text/plain">
                 <fieldset class="datosPersonales">
                     <legend>Datos personales</legend>
+                    
                     <label>Nombre: <input type="text" name="nombre" id="nombre" required></label>
                     <label>Apellidos: <input type="text" name="apellidos" id="apellidos" required></label>
                     <label>Dirección: <input type="text" name="direccion" id="direccion"></label>
@@ -99,12 +41,17 @@
                     <label>Ciudad: <input type="text" name="ciudad" id="ciudad"></label>
                     <label>DNI: <input type="text" name="dni" id="dni"></label>
                     <label>Correo electrónico: <input type="email" name="correoElectronico" id="correoElectronico" required></label>
+                    
                     <fieldset class="sexo">
                         <legend>Sexo</legend>
-                        <label><input type="radio" name="genero" value="hombre"> Hombre</label>
-                        <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                            <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                        </div>
                     </fieldset>
+
                     <label>Fecha de nacimiento: <input type="date" name="fechaNacimiento" id="fechaNacimiento"></label>
+                    
                     <label>¿Cual ha sido tu juego favorito?:
                         <select name="personaje" id="personaje">
                             <option value="pokemon">Pokemon</option>
@@ -115,20 +62,25 @@
                             <option value="ninguno">Ninguno de los nombrados</option>
                         </select>
                     </label>
+
                     <label>Deja un comentario:
                         <textarea name="comentarios" id="comentarios" cols="30" rows="4" placeholder="Escribe aquí..."></textarea>
                     </label>
+
                     <label>Adjuntar archivo: <input type="file" name="archivo" id="archivo"></label>
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Enviar">
+                    
+                    <div class="botones-container">
+                        <input type="reset" value="Borrar" class="btn-borrar">
+                        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    </div>
                 </fieldset>
             </form>
         </div>
     </main>
-    <!-- FOOTER -->
+
     <footer>
         <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
     </footer>
->>>>>>> 342f6a93e6d8f01669ad469073ff6c286fb411aa
+
 </body>
 </html>
