@@ -4,7 +4,78 @@
     --blanco: #ffffff;
 }
 
-body {
+/* HEADER Y NAVEGACIÓN */
+
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body{
+    background-color: var(--fondo-claro);
+    font-family: 'Georgia','Times New Roman',serif;
+    line-height: 1.7;
+    color: var(--texto-oscuro);
+}
+
+/* ========== HEADER / NAV ========== */
+header{
+    background-color:var(--azul-oscuro);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-principal{
+    max-width:1300px;
+    margin:0 auto;
+    padding:1.2rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo a{
+    color:var(--blanco);
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight: normal;
+    letter-spacing:1px;
+}
+
+.logo span {
+    color: var(--celeste-gamer);
+    font-style:italic;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:2.5rem;
+}
+
+.menu-enlace{
+    color:var(--blanco);
+    text-decoration:none;
+    padding:0.5rem 0;
+    font-size:1.1rem;
+    border-bottom:2px solid transparent;
+    transition:all 0.3s ease;
+}
+
+.menu-enlace:hover {
+    border-bottom-color: var(--celeste-gamer);
+    color: var(--celeste-gamer);
+    transform: translateY(-2px);
+}
+
+/* SECCIÓN DEL FORMULARIO */
+
+main {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,53 +88,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* HEADER Y NAVEGACIÓN */
-
-header {
-    background-color: var(--azul-oscuro);
-    border-bottom: 2px solid var(--celeste-gamer);
-}
-
-.menu-principal {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.logo span {
-    color: var(--celeste-gamer);
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-    margin: 0;
-}
-
-.menu-enlace {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.menu-enlace:hover {
-    color: var(--celeste-gamer);
-}
-
-/* SECCIÓN DEL FORMULARIO */
-
 .main-wrapper {
     flex: 1;
     display: flex;
@@ -74,7 +98,7 @@ header {
     padding-top: 120px;
 }
 
-.fuentegrande {
+h1 {
     color: var(--celeste-gamer);
     text-align: center;
     font-size: 2.5rem;

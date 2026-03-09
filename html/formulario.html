@@ -20,74 +20,75 @@
             <ul class="menu">
                 <li><a class="menu-enlace" href="index.html">Inicio</a></li>
                 <li><a class="menu-enlace" href="noticias.html">Noticias</a></li>
-                <li><a class="menu-enlace" href="lanzamientos.html">Próximos Juegos</a></li>
+                <li><a class="menu-enlace" href="lanzamientos.html">Próximos Lanzamientos</a></li>
                 <li><a class="menu-enlace" href="formulario.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
-<div class="main-container">
+<main class="main-wrapper">
+    <div class="main-container">
 
-    <h1 class="fuentegrande">¡El juego ha finalizado!</h1>
+        <h1>¡El juego ha finalizado!</h1>
 
-    <main class="form-wrapper">
-        <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+        <main class="form-wrapper">
+            <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
 
-            <fieldset class="datos-personales">
-                <legend>Datos personales</legend>
+                <fieldset class="datos-personales">
+                    <legend>Datos personales</legend>
 
-                <label>Nombre:
-                    <input type="text" name="nombre" required>
-                </label>
+                    <label>Nombre:
+                        <input type="text" name="nombre" required>
+                    </label>
 
-                <label>Apellidos:
-                    <input type="text" name="apellidos" required>
-                </label>
+                    <label>Apellidos:
+                        <input type="text" name="apellidos" required>
+                    </label>
 
-                <label>Email:
-                    <input type="email" name="correo" required>
-                </label>
+                    <label>Email:
+                        <input type="email" name="correo" required>
+                    </label>
 
-                <fieldset class="sexo">
-                    <legend>Sexo</legend>
+                    <fieldset class="sexo">
+                        <legend>Sexo</legend>
 
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="genero" value="h"> Hombre
-                        </label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="genero" value="h"> Hombre
+                            </label>
 
-                        <label>
-                            <input type="radio" name="genero" value="m"> Mujer
-                        </label>
+                            <label>
+                                <input type="radio" name="genero" value="m"> Mujer
+                            </label>
+                        </div>
+
+                    </fieldset>
+
+                    <label>Juego favorito:
+                        <select name="juego">
+                            <option value="pokemon">Pokemon</option>
+                            <option value="gta">GTA 6</option>
+                            <option value="wow">World of Warcraft</option>
+                        </select>
+                    </label>
+
+                    <label>Comentario:
+                        <textarea name="comentario" rows="3"></textarea>
+                    </label>
+
+                    <div class="botones-container">
+                        <input type="reset" value="Borrar" class="btn-borrar">
+                        <input type="submit" value="Enviar" class="btn-enviar">
                     </div>
 
                 </fieldset>
 
-                <label>Juego favorito:
-                    <select name="juego">
-                        <option value="pokemon">Pokemon</option>
-                        <option value="gta">GTA 6</option>
-                        <option value="wow">World of Warcraft</option>
-                    </select>
-                </label>
+            </form>
+        </main>
 
-                <label>Comentario:
-                    <textarea name="comentario" rows="3"></textarea>
-                </label>
-
-                <div class="botones-container">
-                    <input type="reset" value="Borrar" class="btn-borrar">
-                    <input type="submit" value="Enviar" class="btn-enviar">
-                </div>
-
-            </fieldset>
-
-        </form>
-    </main>
-
-</div>
-
+    </div>
+</main>
 <footer>
     <p>© 2026 GameNews - Trabajo grupal Lenguajes de Marcas</p>
 </footer>

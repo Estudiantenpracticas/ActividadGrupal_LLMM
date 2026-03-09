@@ -406,15 +406,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Animación para el footer */
-footer {
-    transition: background-color 0.3s ease;
-}
-
-footer:hover {
-    background-color: #053b6e;
-}
-
 /* Animación para el título principal */
 h1 {
     position: relative;
